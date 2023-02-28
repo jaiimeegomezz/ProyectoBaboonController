@@ -46,16 +46,10 @@
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <JFXButton fx:id="BotonSalir" prefHeight="31.0" prefWidth="291.0" text="SALIR" GridPane.rowIndex="5">
-                                 <font>
-                                    <Font name="Georgia" size="18.0" />
-                                 </font>
-                              </JFXButton>
-                              <JFXButton fx:id="BotonPerfil" prefHeight="31.0" prefWidth="242.0" text="PERFIL">
+                              <JFXButton fx:id="BotonSalir" prefHeight="31.0" prefWidth="291.0" text="VOLVER" GridPane.rowIndex="4">
                                  <font>
                                     <Font name="Georgia" size="18.0" />
                                  </font>
@@ -72,7 +66,12 @@
                <children>
                   <HBox prefHeight="186.0" prefWidth="550.0" styleClass="parent" stylesheets="@firstGUI.css">
                      <children>
-                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="153.0" prefWidth="551.0" styleClass="parent" stylesheets="@firstGUI.css" text="Bienvenido" textAlignment="CENTER">
+                        <Label alignment="CENTER" prefHeight="49.0" prefWidth="135.0" text="Usuario vigía">
+                           <font>
+                              <Font name="Georgia" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label contentDisplay="CENTER" prefHeight="153.0" prefWidth="383.0" styleClass="parent" stylesheets="@firstGUI.css" text="Bienvenido" textAlignment="CENTER">
                            <font>
                               <Font name="Georgia" size="51.0" />
                            </font>
@@ -82,51 +81,32 @@
                         </Label>
                      </children>
                   </HBox>
-                  <HBox prefHeight="126.0" prefWidth="550.0" styleClass="parent" stylesheets="@firstGUI.css">
+                  <HBox prefHeight="387.0" prefWidth="550.0" styleClass="parent" stylesheets="@firstGUI.css">
                      <VBox.margin>
                         <Insets top="40.0" />
                      </VBox.margin>
                      <children>
-                        <JFXButton fx:id="BotonLuz" prefHeight="33.0" prefWidth="200.0" styleClass="loginBtn" stylesheets="@firstGUI.css" text="Datos de Luz" textAlignment="CENTER">
-                           <font>
-                              <Font name="Georgia" size="18.0" />
-                           </font>
-                           <HBox.margin>
-                              <Insets left="25.0" right="20.0" top="50.0" />
-                           </HBox.margin>
-                        </JFXButton>
-                        <JFXButton fx:id="BotonHumedad" prefHeight="33.0" prefWidth="200.0" styleClass="loginBtn" stylesheets="@firstGUI.css" text="Datos de Humedad" textAlignment="CENTER">
-                           <font>
-                              <Font name="Georgia" size="18.0" />
-                           </font>
-                           <HBox.margin>
-                              <Insets left="40.0" top="50.0" />
-                           </HBox.margin>
-                        </JFXButton>
+                        <GridPane prefHeight="377.0" prefWidth="549.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="549.0" minWidth="10.0" prefWidth="549.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="332.0" minWidth="0.0" prefWidth="0.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="133.0" minHeight="10.0" prefHeight="76.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="186.0" minHeight="10.0" prefHeight="142.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="194.0" minHeight="10.0" prefHeight="161.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label alignment="CENTER" prefHeight="21.0" prefWidth="277.0" text="Estas en el edificio C" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="281.0" text="El ruido detectado es de 50 dB" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+                              <Label alignment="CENTER" prefHeight="60.0" prefWidth="218.0" styleClass="loginBtn" stylesheets="@firstGUI.css" text="Datos de  Sonido" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font name="Georgia" size="22.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </GridPane>
                      </children>
-                  </HBox>
-                  <HBox prefHeight="110.0" prefWidth="550.0" styleClass="parent" stylesheets="@firstGUI.css">
-                     <children>
-                        <JFXButton fx:id="BotonSonido" prefHeight="33.0" prefWidth="200.0" styleClass="loginBtn" stylesheets="@firstGUI.css" text="Datos Sonido" textAlignment="CENTER">
-                           <font>
-                              <Font name="Georgia" size="18.0" />
-                           </font>
-                           <HBox.margin>
-                              <Insets left="25.0" right="20.0" top="5.0" />
-                           </HBox.margin>
-                        </JFXButton>
-                        <JFXButton fx:id="BotonTemperatura" prefHeight="33.0" prefWidth="200.0" styleClass="loginBtn" stylesheets="@firstGUI.css" text="Datos Temperatura" textAlignment="CENTER">
-                           <font>
-                              <Font name="Georgia" size="18.0" />
-                           </font>
-                           <HBox.margin>
-                              <Insets left="40.0" top="5.0" />
-                           </HBox.margin>
-                        </JFXButton>
-                     </children>
-                     <VBox.margin>
-                        <Insets top="10.0" />
-                     </VBox.margin>
                   </HBox>
                </children>
             </VBox>

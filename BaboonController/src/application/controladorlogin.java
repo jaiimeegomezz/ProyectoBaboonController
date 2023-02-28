@@ -38,6 +38,8 @@ public class controladorlogin {
 
     @FXML
     private JFXButton botonentrar;
+    
+    public String usuario;
 
    
     @FXML
@@ -91,8 +93,13 @@ public class controladorlogin {
     }
     @FXML
     void initialize() {
+    	usuario = textousuario.getText();
         
     }
+	public String getUsuario() {
+		return usuario;
+	}
+    
 }
 
 
