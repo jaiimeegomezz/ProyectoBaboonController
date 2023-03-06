@@ -66,30 +66,54 @@
                               </JFXButton>
                               <JFXComboBox fx:id="ComboBoxSexo" prefHeight="31.0" prefWidth="180.0" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
                               <DatePicker fx:id="DatePerfil" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
-                              <JFXTextField fx:id="NombrePerfil" focusColor="RED" styleClass="sidebar" stylesheets="@firstGUI.css" text="Nombre:" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                              <JFXTextField fx:id="NombrePerfil" focusColor="RED" prefHeight="29.0" prefWidth="301.0" styleClass="sidebar" stylesheets="@firstGUI.css" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Georgia" size="15.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets left="70.0" />
+                                 </GridPane.margin>
+                              </JFXTextField>
+                              <JFXTextField fx:id="ApellidosPerfil" focusColor="RED" styleClass="sidebar" stylesheets="@firstGUI.css" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Georgia" size="15.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets left="70.0" />
+                                 </GridPane.margin>
+                              </JFXTextField>
+                              <JFXTextField fx:id="CorreoPerfil" focusColor="RED" styleClass="sidebar" stylesheets="@firstGUI.css" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="Georgia" size="15.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets left="70.0" />
+                                 </GridPane.margin>
+                              </JFXTextField>
+                              <Label prefHeight="21.0" prefWidth="234.0" text="Nombre:" GridPane.rowIndex="1">
                                  <font>
                                     <Font name="Georgia" size="15.0" />
                                  </font>
                                  <GridPane.margin>
                                     <Insets left="5.0" />
                                  </GridPane.margin>
-                              </JFXTextField>
-                              <JFXTextField fx:id="ApellidosPerfil" focusColor="RED" styleClass="sidebar" stylesheets="@firstGUI.css" text="Apellidos: " GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                              </Label>
+                              <Label prefHeight="21.0" prefWidth="229.0" text="Apellido:" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets left="5.0" />
+                                 </GridPane.margin>
+                                 <font>
+                                    <Font name="Georgia" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="21.0" prefWidth="241.0" text="Correo:" GridPane.rowIndex="4">
                                  <font>
                                     <Font name="Georgia" size="15.0" />
                                  </font>
                                  <GridPane.margin>
                                     <Insets left="5.0" />
                                  </GridPane.margin>
-                              </JFXTextField>
-                              <JFXTextField fx:id="CorreoPerfil" focusColor="RED" styleClass="sidebar" stylesheets="@firstGUI.css" text="Correo: " GridPane.halignment="CENTER" GridPane.rowIndex="4">
-                                 <font>
-                                    <Font name="Georgia" size="15.0" />
-                                 </font>
-                                 <GridPane.margin>
-                                    <Insets left="5.0" />
-                                 </GridPane.margin>
-                              </JFXTextField>
+                              </Label>
                            </children>
                         </GridPane>
                      </children>

@@ -55,7 +55,7 @@
                                     <Font name="Georgia" size="18.0" />
                                  </font>
                               </JFXButton>
-                              <JFXButton fx:id="BotonPerfil" prefHeight="31.0" prefWidth="242.0" text="PERFIL">
+                              <JFXButton fx:id="BotonPerfil" onAction="#VerDatosPerfil" prefHeight="31.0" prefWidth="242.0" text="PERFIL">
                                  <font>
                                     <Font name="Georgia" size="18.0" />
                                  </font>

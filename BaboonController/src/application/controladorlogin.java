@@ -38,9 +38,7 @@ public class controladorlogin {
 
     @FXML
     private JFXButton botonentrar;
-    
-    public String usuario;
-
+   
    
     @FXML
    	void comprobarLogIn(ActionEvent event) throws IOException{
@@ -58,17 +56,26 @@ public class controladorlogin {
    				
    			String usuario = usuarios.get(i).getUsuario();	
    			String nombre = usuarios.get(i).getNombre();
-   			String apellido1 = usuarios.get(i).getApellido1();
+   			String apellido = usuarios.get(i).getApellido();
    			String correo = usuarios.get(i).getCorreo();
    			String tipo = usuarios.get(i).getTipo();
    			
+   			System.out.println(usuario);
+   			System.out.println(apellido);
+   			System.out.println(correo);
    			FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/PanelvigiaVista.fxml"));
    			
    			
    			controladorPanelvigia controladorPanelvigia = new controladorPanelvigia();
+   			
 			
 			loader.setController(controladorPanelvigia);
 			Parent root = loader.load();
+			
+			controladorPanelvigia.getUsuario(usuario);
+			controladorPanelvigia.getApellido(apellido);
+			controladorPanelvigia.getCorreo(correo);
+			
    			Stage stage = new Stage();
    			stage = (Stage)(((Node) (event.getSource())).getScene().getWindow());
    			stage.setScene(new Scene(root));
@@ -93,12 +100,10 @@ public class controladorlogin {
     }
     @FXML
     void initialize() {
-    	usuario = textousuario.getText();
+    	
         
     }
-	public String getUsuario() {
-		return usuario;
-	}
+
     
 }
 

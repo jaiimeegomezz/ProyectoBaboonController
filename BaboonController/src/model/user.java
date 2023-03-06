@@ -1,5 +1,4 @@
 package model;
-
 public class user {
 	
 public String nombre, apellido1, correo, usuario, password, tipo;
@@ -27,11 +26,12 @@ public void setNombre(String nombre) {
 	this.nombre = nombre;
 }
 
-public String getApellido1() {
+public String getApellido() {
 	return apellido1;
+	
 }
 
-public void setApellido1(String apellido1) {
+public void setApellido(String apellido1) {
 	this.apellido1 = apellido1;
 }
 
